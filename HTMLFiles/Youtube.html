@@ -12,24 +12,10 @@
 	<iframe id="player" height="720" width="1200" src(unknown)="" allowfullscreen="" frameBorder="0">
 		#document
 	</iframe>
-	<button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
 	<script src="https://www.youtube.com/iframe_api"></script>
 		</p>
 			<script>
 			
-				$(document).ready(function () {
-					var player = new YT.Player('player');
-					$('#fs').on('click', function () {
-						player.playVideo();
-						var $$ = document.querySelector.bind(document);
-						var iframe = $$('#player');
-						var req = iframe.requestFullscreen
-								|| iframe.webkitRequestFullscreen
-								|| iframe.mozRequestFullScreen
-								|| iframe.msRequestFullscreen;
-						req.call(iframe);
-					});
-				});
 							
 				function searchKeyPress(e)
 				{
