@@ -9,9 +9,9 @@
 			<br>
 		<br>
 	<p>
-	<object id="player" height="720" width="1200" src="" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" frameBorder="0">
+	<iframe id="player" height="720" width="1200" src="" allowfullscreen="" frameBorder="0">
 		
-	</object>
+	</iframe>
 		</p>
 			<script>
 				function searchKeyPress(e)
@@ -57,7 +57,7 @@
 					}
 						otherPartId = otherPartId.replace(/t/g, 'start');
 						var customLink = 'https://www.youtube-nocookie.com/embed/' + newId[0] + otherPartId + '&autoplay=1';
-						document.getElementById("player").data = "" + customLink;
+						document.getElementById("player").src = "" + customLink;
 						document.getElementById("directLink").href = "" + customLink;
 					}
 			</script>
