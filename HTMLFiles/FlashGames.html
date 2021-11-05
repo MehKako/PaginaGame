@@ -5,7 +5,7 @@
 	<body>
 		<script src="../Ruffle/ruffle.js"></script>
 		
-		<center> <embed id="FlashWindow" src="../Ruffle/Default.swf" style="margin-top:25px;"> </embed> </center>
+		<center> <embed id="FlashWindow" src="./Ruffle/Default.swf" style="margin-top:25px;"> </embed> </center>
 
 		<div id="GameDiv" style="width: 100%; overflow-y: hidden;margin-top:25px;">
 			
@@ -101,7 +101,7 @@
 				TextParent.style = "font-family:verdana; font-size:20px; color:white; text-align: center; margin-top: auto; height: 65px;";
 				
 				img.style = "width:150px; height:150px; border-radius: 15%; margin-left: auto; margin-right: auto;";
-				img.src = "../Images/GameIcons/Flash/" + Data.ImageFile + "." + Data.ImageType;
+				img.src = "./Images/GameIcons/Flash/" + Data.ImageFile + "." + Data.ImageType;
 				
 				TextParent.appendChild(NameText);
 				newDiv.appendChild(img);
@@ -129,7 +129,7 @@
 			
 			function LoadGame(GameFileName)
 			{
-				document.getElementById("FlashWindow").src = "../Games/Flash/"+ GameFileName + ".swf";
+				document.getElementById("FlashWindow").src = "./Games/Flash/"+ GameFileName + ".swf";
 			}
 		
 			
