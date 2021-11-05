@@ -26,7 +26,7 @@
 						return false;
 					}
 					return true;
-				}
+				}	
 				function createLink() 
 				{
 					var theId = document.getElementById('getId').value;
@@ -63,6 +63,10 @@
 						document.getElementById("player").src = "" + customLink;
 						document.getElementById("directLink").href = "" + customLink;
 					}
+					
+					$(document).ready(function(){
+					   $('#fs').remove();
+					});
 			</script>
 		</div>
 	</body>
