@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+	</head>
+	<body>
+		<script src="../Ruffle/ruffle.js"></script>
+		
+		<center> <embed id="FlashWindow" src="../Ruffle/Default.swf" style="margin-top:25px;"> </embed> </center>
+
+		<div id="GameDiv" style="width: 100%; overflow-y: hidden;margin-top:25px;">
+			
+		</div>
+
+		<style>
+			body, html {
+				height: 100%;
+				margin: 0;
+			}
+			
+		</style>
+
+		<script>
+			
+			
+			var GameList = [
+				{
+					"Name": "Alien Hominid",
+					"SWFFile": "alien_hominid",
+					"ImageFile": "AH",
+					"ImageType":"jpg",
+				}
+				,{
+					"Name": "Bloons",
+					"SWFFile": "bloonstd",
+					"ImageFile": "Bloons",
+					"ImageType":"png",
+				}
+				,{
+					"Name": "Fancy Pants World 1",
+					"SWFFile": "fancy-pants-adventur-301",
+					"ImageFile": "FPW1",
+					"ImageType":"png",
+				}
+				,{
+					"Name": "Potty Racers",
+					"SWFFile": "Potty Racers",
+					"ImageFile": "potty-racers",
+					"ImageType":"webp",
+				}
+				,{
+					"Name": "Potty Racers 2",
+					"SWFFile": "Potty Racers 2",
+					"ImageFile": "potty-racers",
+					"ImageType":"webp",
+				}
+				,{
+					"Name": "Learn To Fly",
+					"SWFFile": "learn-to-fly",
+					"ImageFile": "learn-to-fly",
+					"ImageType":"jpg",
+				}
+				,{
+					"Name": "Interactive Buddy",
+					"SWFFile": "Interactive Buddy",
+					"ImageFile": "interactive-buddy",
+					"ImageType":"jpg",
+				}
+				,{
+					"Name": "Sonic Flash",
+					"SWFFile": "Sonic Flash",
+					"ImageFile": "Sonic",
+					"ImageType":"png",
+				}
+				,{
+					"Name": "Madness: Project Nexus",
+					"SWFFile": "MPN",
+					"ImageFile": "MPN",
+					"ImageType":"png",
+				}
+				,{
+					"Name": "Super Mario 63",
+					"SWFFile": "super-mario-63",
+					"ImageFile": "SM63",
+					"ImageType":"png",
+				}
+			]
+			
+			for (i = 0; i < GameList.length; i++) 
+			{
+				
+				var Data = GameList[i];
+				const newDiv = document.createElement("div");
+				const NameText = document.createTextNode(Data.Name);
+				const TextParent = document.createElement("div");
+				const img = document.createElement('img');
+				
+				newDiv.style = "height: 215px; width: 155px; float: left; margin-left: 5px; margin-top:5px; display: flex; flex-direction: column; cursor: pointer;";
+				newDiv.style.backgroundColor = "rgb(0,0,0,0.5)";
+				newDiv.id = Data.Name;
+				newDiv.className = "GameLink";
+				TextParent.style = "font-family:verdana; font-size:20px; color:white; text-align: center; margin-top: auto; height: 65px;";
+				
+				img.style = "width:150px; height:150px; border-radius: 15%; margin-left: auto; margin-right: auto;";
+				img.src = "../Images/GameIcons/Flash/" + Data.ImageFile + "." + Data.ImageType;
+				
+				TextParent.appendChild(NameText);
+				newDiv.appendChild(img);
+				newDiv.appendChild(TextParent);
+				
+				document.getElementById("GameDiv").appendChild(newDiv);
+				
+				newDiv.onclick = function()
+				{
+					LoadGame(GetGameData(this.id).SWFFile);
+				}
+				
+			}
+			
+			function GetGameData(id)
+			{
+				for (i = 0; i < GameList.length; i++) 
+				{
+					if (GameList[i].Name == id)
+					{
+						return GameList[i];
+					}
+				}
+			}
+			
+			function LoadGame(GameFileName)
+			{
+				document.getElementById("FlashWindow").src = "../Games/Flash/"+ GameFileName + ".swf";
+			}
+		
+			
+		</script>
+    </body>
+</html>
