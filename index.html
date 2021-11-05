@@ -60,16 +60,16 @@
 	<script src="./JQuery.js"></script>
 	
 	<script>
+	
+		var LoadHTML
+	
 		$(document).ready(function(){
-		   
 		   $('#SiteContent').load('./HTMLFiles/Home.html');
-
+		   LoadHTML = function (HTMLFile)
+			{
+				document.getElementById("SiteContent").load(HTMLFile);
+			}
 		});
-		
-		function LoadHTML(HTMLFile)
-		{
-			document.getElementById("SiteContent").load(HTMLFile);
-		}
 	
 	</script>
 </html>
