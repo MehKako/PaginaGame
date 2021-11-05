@@ -2,8 +2,68 @@
 <html>
 	<body>
 		<a onclick="parent.LoadHTML('./HTMLFiles/Games.html')">
-			<img class="GamesButton" src="../Images/SiteImages/GameButton.png" style="width:150px;height:100px;"/>
+			<img class="LinkButton" id="GamesButton" src="../Images/SiteImages/GameButton.png"/>
+		</a>
+		<a onclick="parent.LoadHTML('./HTMLFiles/FlashGames.html')">
+			<img class="LinkButton" id="FlashButton" src="../Images/SiteImages/FlashButton.png"/>
+		</a>
+		<a onclick="parent.LoadHTML('./HTMLFiles/Youtube.html')">
+			<img class="LinkButton" id="YoutubeButton" src="../Images/SiteImages/YoutubeButton.png"/>
 		</a>
 	</body>
+	<style>
 	
+		#GamesButton:hover {
+			width:225px;
+			height:150px;
+			transition: all .5s;
+		}
+		
+		#GamesButton {
+			width:150px;
+			height:100px;
+			position: absolute;
+			top: calc(50% - 250px);
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: 0.5s;
+		}
+		
+		#FlashButton:hover {
+			width:150px;
+			height:150px;
+			transition: all .5s;
+		}
+		
+		#FlashButton {
+			width:100px;
+			height:100px;
+			position: absolute;
+			top: 50%;
+			left: calc(50% - 250px);
+			transform: translate(-50%, -50%);
+			transition: 0.5s;
+		}
+		
+		#YoutubeButton:hover {
+			width:255px;
+			height:255px;
+			transition: all .5s;
+		}
+		
+		#YoutubeButton {
+			width:150px;
+			height:150px;
+			position: absolute;
+			top: 50%;
+			left: calc(50% + 250px);
+			transform: translate(-50%, -50%);
+			transition: 0.5s;
+		}
+	
+		a {
+			cursor: pointer;
+		}
+	
+	</style>
 </html>
