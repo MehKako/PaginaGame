@@ -2,11 +2,11 @@
 <html>
 	<body>
 	
-		<center><div id="CategoryList" width="100%" style="float: center; display: inline-block; text-align: center;">
-			
+		<center><div id="CategoryList" width="100%" style="float: center; display: inline-block; text-align: center; margin-top: 10px; background-image: linear-gradient(grey, white);">
+			<div style="font-family:verdana; font-size:25px; color:white; margin-top: 10px;"> Click to scroll </div>
 		</div></center>
 		
-		<div id="GameDiv" width="100%" style="float: center;">
+		<div id="GameDiv" width="100%" style="float: center; margin-top: 10px;">
 		
 		</div>
 	</body>
@@ -174,7 +174,7 @@
 			const CategoryTextLink = document.createTextNode(CategoryData.CategoryName);
 			
 			CategoryLinkDiv.appendChild(CategoryTextLink);
-			CategoryLinkDiv.style = "font-family:verdana; font-size:15px; color:white; cursor: url(./Images/SiteImages/CursorLink.cur), default; float: left; margin-left: 5px; align: center;";
+			CategoryLinkDiv.style = "font-family:verdana; font-size:20px; color:white; cursor: url(./Images/SiteImages/CursorLink.cur), default; float: left; margin-left: 5px; align: center;";
 			document.getElementById("CategoryList").appendChild(CategoryLinkDiv);
 			
 			ParentDiv.width = "100%" 
