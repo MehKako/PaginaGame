@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<div id="GameDiv" width="100%" style="float: center; ">
+		<div id="GameDiv" width="100%" style="float: center;">
 		
 		</div>
 	</body>
@@ -10,147 +10,210 @@
 	
 		var GameList = [
 			{
-				"Name": "Friday Night Funkin'",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4135479/bin/index.html",
-				"ImageFile": "FNF",
-				"ImageType":"png",
+				"CategoryName": "Shooter"
+				,"GameTable": [
+					{
+						"Name": "1v1.LOL",
+						"GameLink": "https://rawcdn.githack.com/scheng123321/1v1-lol/dd12bf65e0f07e564bcae1c343fcccdb6a383fce/index.html",
+						"ImageFile": "1v1lol",
+						"ImageType":"jpg",
+					}
+					,{
+						"Name": "UZG",
+						"GameLink": "http://v6p9d9t4.ssl.hwcdn.net/html/4198409/UZG_webgl/index.html",
+						"ImageFile": "UZG",
+						"ImageType":"png",
+					}
+					,{
+						"Name": "DEEP",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/3316252/index.html",
+						"ImageFile": "DEEP",
+						"ImageType":"png",
+					}
+					,{
+						"Name": "VRG",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4541766/index.html",
+						"ImageFile": "VRG",
+						"ImageType":"gif",
+					}
+					,{
+						"Name": "Untitled FPS Game",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4747444/index.html",
+						"ImageFile": "FPS",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "Cookie Clicker",
-				"GameLink": "https://xenogames224.github.io/cookieclickerxeno/",
-				"ImageFile": "CookieClicker",
-				"ImageType":"jpeg",
+				"CategoryName": "Platformer"
+				,"GameTable": [
+					{
+						"Name": "Shelled Shinobi",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/2569014/index.html",
+						"ImageFile": "Shelledshinobi",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "Minecraft ",
-				"GameLink": "https://thealiendrew.github.io/minecraft-classic/",
-				"ImageFile": "MCClassic",
-				"ImageType":"jpg",
+				"CategoryName": "Racing / Cars"
+				,"GameTable": [
+					{
+						"Name": "Tanuki Sunset",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1756009/WebGL/index.html?v=1574334742",
+						"ImageFile": "TSunset",
+						"ImageType":"png",
+					}
+					,{
+						"Name": "Drift Hunters",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1792221/ItchIO/index.html?v=1574649458",
+						"ImageFile": "DH",
+						"ImageType":"png",
+					}
+					,{
+						"Name": "Initial Wave",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1910597/Initial%20Wave%20WEBGL_Build/index.html?v=1583444708",
+						"ImageFile": "IW",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "1v1.LOL",
-				"GameLink": "https://rawcdn.githack.com/scheng123321/1v1-lol/dd12bf65e0f07e564bcae1c343fcccdb6a383fce/index.html",
-				"ImageFile": "1v1lol",
-				"ImageType":"jpg",
+				"CategoryName": "Building"
+				,"GameTable": [
+					{
+						"Name": "Minecraft Classic",
+						"GameLink": "https://thealiendrew.github.io/minecraft-classic/",
+						"ImageFile": "MCClassic",
+						"ImageType":"jpg",
+					}
+					,{
+						"Name": "Untitled Building Game",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4656612/index.html",
+						"ImageFile": "Building",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "UZG",
-				"GameLink": "http://v6p9d9t4.ssl.hwcdn.net/html/4198409/UZG_webgl/index.html",
-				"ImageFile": "UZG",
-				"ImageType":"png",
+				"CategoryName": "Clicker / Tycoons"
+				,"GameTable": [
+					{
+						"Name": "Cookie Clicker",
+						"GameLink": "https://xenogames224.github.io/cookieclickerxeno/",
+						"ImageFile": "CookieClicker",
+						"ImageType":"jpeg",
+					}
+				]
 			}
 			,{
-				"Name": "DEEP",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/3316252/index.html",
-				"ImageFile": "DEEP",
-				"ImageType":"png",
+				"CategoryName": "Horror"
+				,"GameTable": [
+					{
+						"Name": "Slender Multiplayer",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4300707/index.html",
+						"ImageFile": "SlenderMulti",
+						"ImageType":"png",
+					}
+					,{
+						"Name": "FNAF 3D",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1510202/index.html?v=1574335379",
+						"ImageFile": "FNAFfinal",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "Shelled Shinobi",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/2569014/index.html",
-				"ImageFile": "Shelledshinobi",
-				"ImageType":"png",
+				"CategoryName": "Rhythm"
+				,"GameTable": [
+					{
+						"Name": "Friday Night Funkin'",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4135479/bin/index.html",
+						"ImageFile": "FNF",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "Slender Multiplayer",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4300707/index.html",
-				"ImageFile": "SlenderMulti",
-				"ImageType":"png",
+				"CategoryName": "Tower Defense"
+				,"GameTable": [
+					{
+						"Name": "Blitt TD",
+						"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1557226/web_0-3-0-22/index.html?v=1574335270",
+						"ImageFile": "BTD",
+						"ImageType":"png",
+					}
+				]
 			}
 			,{
-				"Name": "Tanuki Sunset",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1756009/WebGL/index.html?v=1574334742",
-				"ImageFile": "TSunset",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "VRG",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4541766/index.html",
-				"ImageFile": "VRG",
-				"ImageType":"gif",
-			}
-			,{
-				"Name": "FNAF 3D",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1510202/index.html?v=1574335379",
-				"ImageFile": "FNAFfinal",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "Temple Run 2",
-				"GameLink": "https://html5.gamemonetize.com/pkyyuilfrqkcdnmrxsg60j22ypk0peje/",
-				"ImageFile": "TR2",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "Drift Hunters",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1792221/ItchIO/index.html?v=1574649458",
-				"ImageFile": "DH",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "Blitt TD",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1557226/web_0-3-0-22/index.html?v=1574335270",
-				"ImageFile": "BTD",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "Initial Wave",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/1910597/Initial%20Wave%20WEBGL_Build/index.html?v=1583444708",
-				"ImageFile": "IW",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "Untitled Building Game",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4656612/index.html",
-				"ImageFile": "Building",
-				"ImageType":"png",
-			}
-			,{
-				"Name": "Untitled FPS Game",
-				"GameLink": "https://v6p9d9t4.ssl.hwcdn.net/html/4747444/index.html",
-				"ImageFile": "FPS",
-				"ImageType":"png",
+				"CategoryName": "Mobile"
+				,"GameTable": [
+					{
+						"Name": "Temple Run 2",
+						"GameLink": "https://html5.gamemonetize.com/pkyyuilfrqkcdnmrxsg60j22ypk0peje/",
+						"ImageFile": "TR2",
+						"ImageType":"png",
+					}
+				]
 			}
 		]
 		
 		for (i = 0; i < GameList.length; i++) 
 		{
+			var CategoryData = GameList[i];
+			const ParentDiv = document.createElement("div");
+			const TextDiv = document.createElement("div");
+			const CategoryText = document.createTextNode(CategoryData.CategoryName);
 			
-			var Data = GameList[i];
-			const newDiv = document.createElement("div");
-			const NameText = document.createTextNode(Data.Name);
-			const TextParent = document.createElement("div");
-			const img = document.createElement('img');
+			ParentDiv.id = "CategoryDiv"
+			ParentDiv.width = "100%" 
+			ParentDiv.style = "display: table; top: 0px; left: 0; width: 100%";
+			TextDiv.style = "font-family:verdana; font-size:25px; color:white; text-align: center;";
+			TextDiv.appendChild(CategoryText);
+			ParentDiv.appendChild(TextDiv);
 			
-			newDiv.style = " height: 215px; width: 155px; float: left; margin-left: 5px; margin-top:5px; display: flex; flex-direction: column; cursor: pointer;";
-			newDiv.style.backgroundColor = "rgb(0,0,0,0.5)";
-			newDiv.id = Data.Name;
-			newDiv.className = "GameLink";
-			TextParent.style = "font-family:verdana; font-size:20px; color:white; text-align: center; margin-top: auto; height: 65px;";
-			
-			img.style = "width:150px; height:150px; border-radius: 15%; margin-left: auto; margin-right: auto;";
-			img.src = "./Images/GameIcons/Games/" + Data.ImageFile + "." + Data.ImageType;
-			
-			TextParent.appendChild(NameText);
-			newDiv.appendChild(img);
-			newDiv.appendChild(TextParent);
-			
-			document.getElementById("GameDiv").appendChild(newDiv);
-			
-			newDiv.onclick = function()
+			for (x = 0; x < CategoryData.GameTable.length; x++) 
 			{
-				window.open(GetGameData(this.id).GameLink);
+				var Data = CategoryData.GameTable[x]
+				const newDiv = document.createElement("div");
+				const NameText = document.createTextNode(Data.Name);
+				const TextParent = document.createElement("div");
+				const img = document.createElement('img');
+				
+				newDiv.style = "height: 215px; width: 155px; float: left; margin-left: 5px; margin-top:5px; display: flex; flex-direction: column; cursor: pointer;";
+				newDiv.style.backgroundColor = "rgb(0,0,0,0.5)";
+				newDiv.id = Data.Name;
+				newDiv.className = "GameButton";
+				TextParent.style = "font-family:verdana; font-size:20px; color:white; text-align: center; margin-top: auto; height: 65px;";
+				
+				img.style = "width:150px; height:150px; border-radius: 15%; margin-left: auto; margin-right: auto;";
+				img.src = "./Images/GameIcons/Games/" + Data.ImageFile + "." + Data.ImageType;
+				
+				TextParent.appendChild(NameText);
+				newDiv.appendChild(img);
+				newDiv.appendChild(TextParent);
+				
+				ParentDiv.appendChild(newDiv);
+				
+				newDiv.onclick = function()
+				{
+					window.open(GetGameData(this.id).GameLink);
+				}
 			}
 			
+			document.getElementById("GameDiv").appendChild(ParentDiv);
 		}
 		
 		function GetGameData(id)
 		{
 			for (i = 0; i < GameList.length; i++) 
 			{
-				if (GameList[i].Name == id)
+				for (x = 0; x < GameList[i].GameTable.length; x++) 
 				{
-					return GameList[i];
+					if (GameList[i].GameTable[x].Name == id)
+					{
+						return GameList[i].GameTable[x];
+					}
 				}
 			}
 		}
