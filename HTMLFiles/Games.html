@@ -188,8 +188,7 @@
 			
 			CategoryLinkDiv.onclick = function()
 			{
-				alert(this.getAttribute("CategoryId"));
-				document.getElementById(this.getAttribute("CategoryId")).scrollIntoView();
+				document.getElementById(this.getAttribute("CategoryId")).scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
 			}
 			
 			for (x = 0; x < CategoryData.GameTable.length; x++) 
