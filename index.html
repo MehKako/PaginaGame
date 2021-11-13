@@ -7,6 +7,15 @@
 			<a onclick="LoadHTML('./HTMLFiles/Home.html')">
 				<img src="./Images/SiteImages/HomeButton.png" style="width:50px;height:50px;"/>
 			</a>
+			<a onclick="LoadLink('https://www.youtube.com/channel/UCxZPUmI_NGZ-ODbbpaeqi3Q/featured')" style="float: right;">
+				<img src="./Images/SiteImages/YoutubeLinkLogo.png"/>
+			</a>
+			<a onclick="LoadLink('https://twitter.com/MrComputt')" style="float: right; margin-right: 15px;">
+				<img src="./Images/SiteImages/TwitterLinkLogo.png"/>
+			</a>
+			<a style="font-family:verdana; font-size:35px; color:white; float: right; margin-right: 15px; text-align: center; height:54px; cursor: url(./Images/SiteImages/Cursor.cur), default;">
+				My social medias:
+			</a>
 		</div>
 	</head>
 	<body>
@@ -94,6 +103,11 @@
 				$('#SiteContent').load(HTMLFile);
 			}
 		});
+	
+		function LoadLink(WebLink)
+		{
+			window.open(WebLink);
+		}
 	
 	</script>
 </html>
