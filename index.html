@@ -106,19 +106,18 @@
 		}
 		
 		$(document).ready(function(){
-			var Opened = getParameterByName("OpenMenu");
-			   if (Opened)
-			   {
-				   alert("Opened: " + Opened);
-			   	$('#SiteContent').load("./HTMLFiles/ " + Opened + ".html");
-			   }
-			   else
-			   {
-			   	 $('#SiteContent').load('./HTMLFiles/Home.html');
-			   }
 		   LoadHTML = function (HTMLFile)
 			{
 			   $('#SiteContent').load(HTMLFile);
+			}
+			var Opened = getParameterByName("OpenMenu");
+			if (Opened)
+			{
+			 	LoadHTML("./HTMLFiles/ " + Opened + ".html");
+			}
+			else
+			{
+				LoadHTML('./HTMLFiles/Home.html');
 			}
 		});
 	
