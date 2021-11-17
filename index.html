@@ -106,18 +106,18 @@
 		}
 		
 		$(document).ready(function(){
-		   $('#SiteContent').load('./HTMLFiles/Home.html');
-		   LoadHTML = function (HTMLFile)
-			{
-			   var Opened = getParameterByName("OpenMenu");
+			var Opened = getParameterByName("OpenMenu");
 			   if (Opened)
 			   {
 			   	$('#SiteContent').load("./HTMLFiles/ " + Opened + ".html");
 			   }
 			   else
 			   {
-			   	$('#SiteContent').load(HTMLFile);
+			   	 $('#SiteContent').load('./HTMLFiles/Home.html');
 			   }
+		   LoadHTML = function (HTMLFile)
+			{
+			   $('#SiteContent').load(HTMLFile);
 			}
 		});
 	
