@@ -6,7 +6,7 @@
     
     <input type="text" id="WebHref"><br><br>
     
-    <embed id="WebContent" src="">
+    <embed id="WebContentHref" src="">
     </embed>
     
   <button onclick="OpenLink()">Try it</button>
@@ -15,10 +15,24 @@
       
       function OpenLink()
       {
-        document.getElementById("WebContent").src= document.getElementById("WebHref").Value;
+        document.getElementById("WebContentHref").src= document.getElementById("WebHref").Value;
       }
       
      </script>
+    <style>
+      
+      #WebHref {
+        width: 100%;
+      }
+      
+      #WebContentHref {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 100px;
+      }
+      
+    </style>
   
   </body>
   </html>
