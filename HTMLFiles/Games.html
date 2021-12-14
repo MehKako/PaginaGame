@@ -166,12 +166,6 @@
 						"ImageFile": "FNF",
 						"ImageType":"png",
 					}
-                                        ,{
-						"Name": "Friday Night Funkin' Sonic 2.0",
-						"GameLink": "https://fnfcdn.com/sonic-exe-2/",
-						"ImageFile": "FNF",
-						"ImageType":"png",
-	                                }
 				]
 			}
 			,{
@@ -272,9 +266,19 @@
 				
 				ParentDiv.appendChild(newDiv);
 				
-				newDiv.onclick = function()
+				if (Data.Name == "Friday Night Funkin'")
 				{
-					window.open(GetGameData(this.id).GameLink);
+					newDiv.onclick = function()
+					{
+						parent.LoadHTML("./HTMLFiles/FNFMods.html")
+					}
+				}
+				else
+				{
+					newDiv.onclick = function()
+					{
+						window.open(GetGameData(this.id).GameLink);
+					}
 				}
 			}
 			
