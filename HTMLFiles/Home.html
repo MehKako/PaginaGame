@@ -51,11 +51,13 @@
 			
 			document.addEventListener("scroll", event => {
 				ScrollY = document.scrollTop;
+				UpdateTextPos();
 			});
 			
 			document.addEventListener('mousemove', (event) => {
-				MouseText.style.top = event.clientY + "px";
-				MouseText.style.left = event.clientX + "px";
+				MPosY = event.clientY;
+				MPosX = event.clientX;
+				UpdateTextPos();
 			});
 			
 		</script>
