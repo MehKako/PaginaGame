@@ -38,21 +38,9 @@
 			
 			var MouseText = document.getElementById("MouseText")
 			
-			var MPosX = 0;
-			var MPosY = 0;
-			
-			var ScrollY = 0;
-			
-			function UpdateTextPos()
-			{
-				MouseText.style.top = MPosY;
-				MouseText.style.left = MPosX;
-			}
-			
 			document.addEventListener('mousemove', (event) => {
-				MPosY = event.clientY;
-				MPosX = event.clientX;
-				UpdateTextPos();
+				MouseText.style.top = event.clientY;
+				MouseText.style.left = event.clientX;
 			});
 			
 		</script>
