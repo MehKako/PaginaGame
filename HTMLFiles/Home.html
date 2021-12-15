@@ -43,12 +43,6 @@
 			
 			var ScrollY = 0;
 			
-			function UpdateTextPos()
-			{
-				MouseText.style.top = (MPosY + ScrollY) + "px";
-				MouseText.style.left = MPosX + "px";
-			}
-			
 			document.addEventListener("scroll", event => {
 				ScrollY = document.scrollTop;
 				UpdateTextPos();
