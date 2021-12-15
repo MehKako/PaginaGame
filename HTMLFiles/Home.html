@@ -43,10 +43,11 @@
 			
 			var ScrollY = 0;
 			
-			document.addEventListener("scroll", event => {
-				ScrollY = document.scrollTop;
-				UpdateTextPos();
-			});
+			function UpdateTextPos()
+			{
+				MouseText.style.top = MPosY;
+				MouseText.style.left = MPosX;
+			}
 			
 			document.addEventListener('mousemove', (event) => {
 				MPosY = event.clientY;
@@ -59,7 +60,7 @@
 	<style>
 	
 		#MouseText {
-			position: absolute;
+			position: fixed;
 			background-color: rgb(255,255,255,0.5);
 			font-family:verdana; 
 			font-size:25px; 
