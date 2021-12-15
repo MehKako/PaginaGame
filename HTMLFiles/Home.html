@@ -39,7 +39,7 @@
 			var MouseText = document.getElementById("MouseText")
 			
 			document.addEventListener('mousemove', (event) => {
-				MouseText.style.top = event.clientY + "px";
+				MouseText.style.top = (event.clientY - 25) + "px";
 				MouseText.style.left = event.clientX + "px";
 			});
 			
