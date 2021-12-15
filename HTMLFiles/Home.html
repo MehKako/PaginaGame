@@ -38,6 +38,21 @@
 			
 			var MouseText = document.getElementById("MouseText")
 			
+			var MPosX = 0;
+			var MPosY = 0;
+			
+			var ScrollY = 0;
+			
+			function UpdateTextPos()
+			{
+				MouseText.style.top = (MPosY + ScrollY) + "px";
+				MouseText.style.left = MPosX + "px";
+			}
+			
+			document.addEventListener("scroll", event => {
+				ScrollY = scroller.scrollTop;
+			});
+			
 			document.addEventListener('mousemove', (event) => {
 				MouseText.style.top = event.clientY + "px";
 				MouseText.style.left = event.clientX + "px";
