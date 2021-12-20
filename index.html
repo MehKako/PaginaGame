@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head> 
-		<title>MrComput's Gaming</title>
+		<title id="PageName">Mehkako's Gaming Site</title>
 		<link rel="icon" type="image/png" href="./Images/SiteImages/Favicon.png"/>
 		<div class="Topbar">
 			<a onclick="LoadHTML('./HTMLFiles/Home.html')">
@@ -16,7 +16,28 @@
 			<a style="font-family:verdana; font-size:35px; color:white; float: right; margin-right: 15px; text-align: center; height:54px; cursor: url(./Images/SiteImages/Cursor.cur), default;">
 				My social medias:
 			</a>
+			<a onclick="HideGoogle" style="font-family:verdana; font-size:35px; color:white; float: right; margin-right: 15px; text-align: center; height:54px; cursor: url(./Images/SiteImages/Cursor.cur), default;">
+				Hide as google
+			</a>
 		</div>
+		<script>
+			
+			var IsHidden = false;
+			
+			function HideGoogle()
+			{
+				IsHidden = !IsHidden;
+				if (IsHidden)
+				{
+					document.getElementById("PageName").innerHTML = "Google";
+				}
+				else	
+				{
+					document.getElementById("PageName").innerHTML = "Mehkako's Gaming Site";
+				}
+			}
+			
+		</script>
 	</head>
 	<body>
 		<div id="SiteContent" class="SiteContent" src="./HTMLFiles/Home.html"> 
@@ -25,13 +46,6 @@
 		<div class="bg-image"> 
 			
 		</div>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8006078161940453" crossorigin="anonymous"></script>
-		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8006078161940453" data-ad-slot="4148805098" data-ad-format="auto" data-full-width-responsive="true">
-		
-		</ins>
-		<script>
-			 (adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
 	<style>
 		body, html {
 			height: 100%;
